@@ -44,9 +44,9 @@ exports.plugins = {
         defaultContext: {
           _options: {
             layout: 'app/layouts/main.static.hbs',
-            partials: [
-              'app/partials/header.static.hbs'
-            ]
+            // partials: [
+            //   'app/partials/header.static.hbs'
+            // ]
           }
         }
       })
