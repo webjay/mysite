@@ -26,7 +26,9 @@ function insertPhotos (photos) {
       var image = elements[colNo].getElementsByTagName('img')[0];
       anchor.attributes.href.value = photos[imgNo].link;
       image.attributes.src.value = photos[imgNo].images.low_resolution.url;
-      image.attributes.alt.value = photos[imgNo].caption.text;
+      if (photos[imgNo].caption !== null) {
+        image.attributes.alt.value = photos[imgNo].caption.text;
+      }
       imgNo++;
     }
     if (rowNo !== 0) {
