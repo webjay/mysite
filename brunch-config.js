@@ -2,6 +2,8 @@
 
 const staticBrunch = require('html-brunch-static');
 
+const htmlTag_re = /<[^>]*>/g;
+
 exports.modules = {
   wrapper: false,
   definition: false
@@ -39,7 +41,13 @@ exports.plugins = {
       staticBrunch({
         handlebars: {
           enableProcessor: true,
-          strict: true
+          strict: true,
+          helpers: {
+            striptags: (txt) => {
+              if (txt === undefined) return;
+              return txt.replace(htmlTag_re, '');
+            }
+          }
         },
         defaultContext: {
           _options: {
