@@ -5,11 +5,11 @@
   "version": "0.1.0",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/webjay/mysite.git"
   },
   "scripts": {
     "start": "brunch watch --server",
-    "build": "brunch build --production"
+    "build": "rm -rf public && brunch build --production"
   },
   "devDependencies": {
     "auto-reload-brunch": "2.7.1",

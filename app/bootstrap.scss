@@ -2,6 +2,9 @@
 // Core variables and mixins
 @import "../node_modules/bootstrap/scss/_custom";
 @import "../node_modules/bootstrap/scss/_variables";
+
+$enable-flex: true;
+
 @import "../node_modules/bootstrap/scss/_mixins";
 
 // Reset and dependencies
