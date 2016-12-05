@@ -1,6 +1,9 @@
 /* eslint-env browser */
 'use strict';
 
+var tagstrip_re = /(\.|\?|!)(\s#\w+)+$/m;
+var url = 'https://d2nb7t6y3zkbd1.cloudfront.net/instagrams.json';
+
 function getPhotos (url, handler) {
   var request = new XMLHttpRequest();
   request.open('GET', url, true);
@@ -27,10 +30,14 @@ function insertPhotos (photos) {
     for (var colNo = 0; colNo < columnCount; colNo++) {
       var anchor = columns[colNo].getElementsByTagName('a')[0];
       var image = columns[colNo].getElementsByTagName('img')[0];
+      var caption = columns[colNo].getElementsByClassName('card-text')[0];
       anchor.attributes.href.value = photos[imgNo].link;
       image.attributes.src.value = photos[imgNo].images.low_resolution.url;
+      image.attributes.alt.value = photos[imgNo].tags.join();
       if (photos[imgNo].caption !== null) {
-        image.attributes.alt.value = photos[imgNo].caption.text;
+        caption.textContent = photos[imgNo].caption.text.replace(tagstrip_re, '$1');
+      } else {
+        caption.textContent = '';
       }
       imgNo++;
     }
@@ -42,7 +49,6 @@ function insertPhotos (photos) {
 }
 
 function init () {
-  var url = 'https://d2nb7t6y3zkbd1.cloudfront.net/instagrams.json';
   getPhotos(url, insertPhotos);
 }
 

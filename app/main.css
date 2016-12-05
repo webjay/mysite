@@ -18,7 +18,7 @@ body {
   border: none;
   margin: 0;
 }
-  
+
 #photos .card img {
   width: 320px;
   max-height: 320px;
@@ -34,4 +34,15 @@ footer nav.navbar {
 
 #aboutMe div {
   align-self: flex-end;
+}
+
+.card-img-overlay {
+  display: none;
+}
+.card:hover > .card-img-overlay {
+  display: block;
+}
+
+mark.card-text {
+  opacity: 0.8;
 }
