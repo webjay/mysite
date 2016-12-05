@@ -38,6 +38,7 @@ footer nav.navbar {
 
 .card-img-overlay {
   display: none;
+  pointer-events: none;
 }
 .card:hover > .card-img-overlay {
   display: block;
