@@ -21,7 +21,7 @@ body {
 
 #photos .card img {
   width: 320px;
-  max-height: 320px;
+  height: 320px;
 }
 
 footer nav.navbar {
