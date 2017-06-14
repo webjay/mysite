@@ -1,56 +1,47 @@
 ---
 title: Jacob Friis Saxberg
-description: Photography and fan of fast static websites. Co-founder of <a href="https://lorem.tech/">lorem.tech</a>.
-columns:
-- 1
-- 2
-- 3
+description: Passionated photographer.
 ---
-<header id="brand">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-2 col-sm-12">
-        <img src="jacob.jpg" alt="Jacob" class="img-fluid rounded-circle mx-auto d-block" id="jacobPhoto">
-      </div>
-      <div id="aboutMe" class="col-md-4 offset-md-6 col-sm-12">
-        <div>
-          <h1 class="lead">Hi, I'm Jacob.</h1>
-          <p class="mb-0">{{{ description }}}</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
 
-<div class="container">
-  <div id="photos" class="mt-2 mb-3">
-    <h1 class="text-hide">Instagram photos selected and ordered by the community.</h1>
-    <div class="row mb-2">
-      {{#each columns}}
-      <div class="col-sm-4">
-        <div class="card">
-          <a href="https://www.instagram.com/webjay/" class="card-link"><img src="balls.gif" alt="Loading image..." class="img-fluid img-thumbnail mx-auto d-block card-img"></a>
-          <div class="card-img-overlay">
-            <mark class="card-text">...</mark>
-          </div>
-        </div>
+<div class="container-fluid">
+  <div class="mt-1 mb-5">
+    <h2 class="text-hide">Instagram photos selected and ordered by the community.</h2>
+    <div id="photos">
+      <div class="imgbox">
+        <a href="https://www.instagram.com/webjay/">
+          <img src="balls.gif" alt="Loading image...">
+        </a>
       </div>
-      {{/each}}
     </div>
   </div>
 </div>
 
-<footer>
-  <nav class="navbar navbar-fixed-bottom navbar-light bg-faded">
-    <div class="container">
-      <nav class="nav nav-inline text-xs-center small">
-        <a class="nav-link text-muted" href="mailto:jacob@webcom.dk">jacob@webcom.dk</a>
-        <a class="nav-link text-muted" href="tel:+4542720871">+45 42720871</a>
-        <a class="nav-link text-muted" href="https://www.linkedin.com/in/jfsaxberg/">LinkedIn</a>
-        <a class="nav-link text-muted" href="https://twitter.com/webjay">Twitter</a>
-        <a class="nav-link text-muted" href="https://www.flickr.com/photos/webjay">Flickr</a>
-        <a class="nav-link text-muted" href="https://www.instagram.com/webjay/">Instagram</a>
-      </nav>
+<footer class="fixed-bottom">
+  <nav class="navbar navbar-light bg-faded">
+    <div class="container-fluid">
+      <ul class="nav justify-content-center small">
+        <li class="nav-item">
+          <a class="nav-link text-black" href="./">Jacob Friis Saxberg</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-black" href="mailto:jacob@webcom.dk">jacob@webcom.dk</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-black" href="tel:+4542720871">+45 42720871</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-black" href="https://www.linkedin.com/in/jfsaxberg/">LinkedIn</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-black" href="https://twitter.com/webjay">Twitter</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-black" href="https://www.flickr.com/photos/webjay">Flickr</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-black" href="https://www.instagram.com/webjay/">Instagram</a>
+        </li>
+      </ul>
     </div>
   </nav>
 </footer>

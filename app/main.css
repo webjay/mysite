@@ -1,49 +1,33 @@
 body {
-  background-color: #DFDFDF;
-}
-
-#jacobPhoto {
-  width: 150px;
-  max-height: 150px;
-}
-
-#brand {
   background-color: #fff;
-  margin: 30px 0;
-  padding: 20px 0;
 }
 
-#photos .card {
-  background-color: inherit;
-  border: none;
-  margin: 0;
+#photos {
+  text-align: center;
 }
 
-#photos .card img {
+#photos .imgbox {
+  display: inline-block;
+  min-width: 320px;
+  min-height: 320px;
+  margin: 10px;
+}
+
+#photos .img-std {
   width: 320px;
   height: 320px;
+}
+
+#photos .img-big {
+  width: 640px;
+  height: 640px;
 }
 
 footer nav.navbar {
   box-shadow: 0px -1px 5px 0px rgba(223,223,223,1);
 }
 
-#aboutMe {
-  display: flex;
+.text-black {
+  color: #000;
 }
 
-#aboutMe div {
-  align-self: flex-end;
-}
-
-.card-img-overlay {
-  display: none;
-  pointer-events: none;
-}
-.card:hover > .card-img-overlay {
-  display: block;
-}
-
-mark.card-text {
-  opacity: 0.8;
-}
