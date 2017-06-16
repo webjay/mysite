@@ -15,4 +15,5 @@
 #photos .img-big {
   width: 640px;
   height: 640px;
+  margin-top: 10px;
 }
