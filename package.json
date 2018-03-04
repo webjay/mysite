@@ -10,7 +10,8 @@
   },
   "scripts": {
     "start": "brunch watch --server",
-    "build": "rm -rf public && brunch build --production"
+    "build": "rm -rf public && brunch build --production",
+    "deploy": "git push origin `git subtree split --prefix public dev`:master --force"
   },
   "devDependencies": {
     "auto-reload-brunch": "2.7.1",
