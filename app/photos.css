@@ -5,15 +5,20 @@
 
 #photos .imgbox {
   display: inline-block;
+  min-width: 320px;
+  min-height: 320px;
+  margin: 1px;
 }
 
 #photos .img-std {
   width: 320px;
-  height: 320px;
+  max-height: 320px;
+	object-fit: cover;
+  vertical-align: middle;
 }
 
 #photos .img-big {
   width: 640px;
-  height: 640px;
+	object-fit: cover;
   margin-top: 10px;
 }
